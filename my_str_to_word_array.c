@@ -93,12 +93,12 @@ char **my_str_to_word_array(char const *str)
 
 int main(void)
 {
-    char *str = "Demain, dès l'aube à l'heure où blanchit la campagne,"
-                "Je partirai. Vois-tu, je sais que tu m'attends."
-                "J'irai par la forêt, j'irai par la montagne." 
-                "Je ne puis demeurer loin de toi plus longtemps";
-
+    char *str = "O what can ail thee, knight-at-arms,"
+                "Alone and palely loitering?"
+                "The sedge has withered from the lake,"
+                "And no birds sing"
     char **word_array = my_str_to_word_array(str);
+
     for(int i = 0; word_array[i] != NULL; i++) {
         printf("%s\n", word_array[i]);
     }
